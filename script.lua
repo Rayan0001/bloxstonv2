@@ -56,7 +56,7 @@ sendmsg("[BME] Anticheat bypassed!")
 wait()
 sendmsg("[BME] Snooping for roles..")
 wait(1)
-sendmsg("[BME] Tip: Roles will most likely appear in the night, have this executed before the second half of the night.")
+sendmsg("[BME] Tip: Roles will most likely appear in the night, have this executed before the begin of the night.")
 for i,v in pairs(game:GetService("Workspace").Game:GetChildren()) do 
     local folder = v.Name
     v.ChildAdded:Connect(function(p)
