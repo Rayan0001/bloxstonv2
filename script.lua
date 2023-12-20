@@ -29,6 +29,7 @@ local gunsandroles = {
     ["Winchester"] = "Bounty Hunter",
     ["Silenced Pistol"] = "Hitman",
     ["Plague"] = "Plaguebearer",
+    ["JuggernautT"] = "Juggernaut",
 }
 
 function bypac()
