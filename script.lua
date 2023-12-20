@@ -27,6 +27,7 @@ local gunsandroles = {
     ["Medkit"] = "Doctor",
     ["Pistol"] = "Veteran or Godfather",
     ["Winchester"] = "Bounty Hunter",
+    ["Silenced Pistol"] = "Hitman",
 }
 
 function bypac()
