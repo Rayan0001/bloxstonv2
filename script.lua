@@ -21,7 +21,7 @@ local gunsandroles = {
     ["Shield"] = "Bodyguard",
     ["Knife"] = "Serial Killer",
     ["GuardianSword"] = "Guardian Angel",
-    ["Revolver"] = "Vigilante",
+    ["Revolver"] = "Vigilante or Enforcer",
     ["Katana"] = "Assassin",
     ["ShieldK"] = "Liberator",
     ["Medkit"] = "Doctor",
@@ -30,7 +30,11 @@ local gunsandroles = {
     ["Silenced Pistol"] = "Hitman",
     ["Plague"] = "Plaguebearer",
     ["JuggernautT"] = "Juggernaut",
-    ["PlagueStaff"] = "Pestilence (dangerous)"
+    ["PlagueStaff"] = "Pestilence (dangerous)",
+    ["KnifeFugitive"] = "Fugitive",
+    ["Bat"] = "Outlaw w/o gun",
+    ["TommyGun"] = "Outlaw",
+    ["Tommy Gun"] = "Outlaw",
 }
 
 function bypac()
