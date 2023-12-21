@@ -71,6 +71,9 @@ print("[BME] Anticheat has been bypassed!")
 wait()
 print("[BME] Role snooper has been enabled.")
 sendmsg("[BME] Role snooper has been enabled.")
+if _G.IY = true do -- infinite yield thang
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end
 wait(1)
 sendmsg("[BME] Tip: Roles will most likely appear in the night, have this executed before the begin of the night. if ya want some more info from BME check console.")
 print("[BME] Tip: Roles will most likely appear in the night, have this executed before the begin of the night. if ya want some more info from BME check console.")
