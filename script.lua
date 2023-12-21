@@ -37,6 +37,7 @@ local gunsandroles = {
     ["Bat"] = "Outlaw w/o gun",
     ["TommyGun"] = "Outlaw",
     ["Tommy Gun"] = "Outlaw",
+    ["Scimitar"] = "Pirate",
 }
 
 function bypac()
@@ -58,13 +59,14 @@ end
 sendmsg("Bloxston Mystery ESP")
 sendmsg("Initializing..")
 wait(0.5)
-print("Loaded BME V2.5 in 2102ms")
-print("[BME] Succesfully parsed Version 2.6 and upgraded current version.")
+print("Loaded BME V2.7 in 2102ms")
 print("[BME] tip: dont commit die")
 print("[BME] Changelog for V2.5: Added Juggernaut, Fugitive, Outlaw w/ gun and w/o gun.")
 print("[BME] Changelog for V2.6: Added changelog and changed a bit of messages and added print functions.")
+print("[BME] Changelog for V2.7: Added pirate tool and just new version overall.")
 sendmsg("[BME] Bypassing anticheat..")
-sendmsg("If the anticheat bypassed message doesnt appear, you are probably in the lobby, if so: execute this ingame.")
+sendmsg("[BME] If the anticheat bypassed message doesnt appear, you are probably in the lobby, if so: execute this ingame.")
+print("[BME] If the anticheat bypassed message doesnt appear, you are probably in the lobby, if so: execute this ingame.")
 wait(1)
 bypac()
 wait()
@@ -73,6 +75,9 @@ print("[BME] Anticheat has been bypassed!")
 wait()
 print("[BME] Role snooper has been enabled.")
 sendmsg("[BME] Role snooper has been enabled.")
+if _G.IY = true do -- infinite yield thang
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end
 wait(1)
 sendmsg("[BME] Tip: Roles will most likely appear in the night, have this executed before the begin of the night. if ya want some more info from BME check console.")
 print("[BME] Tip: Roles will most likely appear in the night, have this executed before the begin of the night. if ya want some more info from BME check console.")
