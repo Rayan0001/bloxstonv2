@@ -57,8 +57,10 @@ sendmsg("Bloxston Mystery ESP")
 sendmsg("Initializing..")
 wait(0.5)
 print("Loaded BME V2.5 in 2102ms")
+print("Succesfully parsed V2.6 and upgraded version.")
 print("[BME] tip: dont commit die")
 print("Changelog for V2.5: Added Juggernaut, Fugitive, Outlaw w/ gun and w/o gun.")
+print("Changelog for V2.6: Added changelog and changed a bit of messages and added print functions.")
 sendmsg("[BME] Bypassing anticheat..")
 sendmsg("If the anticheat bypassed message doesnt appear, you are probably in the lobby, if so: execute this ingame.")
 wait(1)
@@ -71,6 +73,7 @@ print("Role snooper has been enabled.")
 sendmsg("[BME] Role snooper has been enabled.")
 wait(1)
 sendmsg("[BME] Tip: Roles will most likely appear in the night, have this executed before the begin of the night. if ya want some more info from BME check console.")
+print("[BME] Tip: Roles will most likely appear in the night, have this executed before the begin of the night. if ya want some more info from BME check console.")
 print("[BME] A vigilante has a blueish nametag. (or someone with a relatable tool/gun)")
 for i,v in pairs(game:GetService("Workspace").Game:GetChildren()) do 
     local folder = v.Name
@@ -82,7 +85,10 @@ for i,v in pairs(game:GetService("Workspace").Game:GetChildren()) do
         plr:SetAttribute("NSXFA",folder)
         sendmsg('[' .. 
             plr:GetAttribute("NSXFA") ..
-            "] (" .. plr.PlayerData.DisplayName.Value  .. ")[" .. plr.PlayerData.Number.Value  ..  "] has been exposed \n")
+            "] (" .. plr.PlayerData.DisplayName.Value  .. ")[" .. plr.PlayerData.Number.Value  ..  "] 's role is now exposed to you and is available in chat! \n")
+        print('[' .. 
+            plr:GetAttribute("NSXFA") ..
+            "] (" .. plr.PlayerData.DisplayName.Value  .. ")[" .. plr.PlayerData.Number.Value  ..  "] 's role is now exposed to you and is available in chat! \n")
         end 
     p.ChildAdded:Connect(function(ai)
         if ai == "WerewolfVal" then 
@@ -90,6 +96,9 @@ for i,v in pairs(game:GetService("Workspace").Game:GetChildren()) do
         
         plr:SetAttribute("NSXFA","Werewolf")
         sendmsg('[' .. 
+            plr:GetAttribute("NSXFA") ..
+            "] (" .. plr.PlayerData.DisplayName.Value  .. ")[" .. plr.PlayerData.Number.Value  ..  "] 's role is now exposed to you and is available in chat! \n")
+        print('[' .. 
             plr:GetAttribute("NSXFA") ..
             "] (" .. plr.PlayerData.DisplayName.Value  .. ")[" .. plr.PlayerData.Number.Value  ..  "] 's role is now exposed to you and is available in chat! \n")
         end 
@@ -113,6 +122,9 @@ game.Players.DescendantAdded:Connect(function(t)
         sendmsg("[" .. 
             (plr:GetAttribute("NSXFA") or "Unknown") .. 
             "] (" .. plr.PlayerData.DisplayName.Value .. ")[" .. plr.PlayerData.Number.Value  ..  "] has a tool with the name " .. tool.Name .. '\n')
+        print("[" .. 
+            (plr:GetAttribute("NSXFA") or "Unknown") .. 
+            "] (" .. plr.PlayerData.DisplayName.Value .. ")[" .. plr.PlayerData.Number.Value  ..  "] has a tool with the name " .. tool.Name .. '\n')
         end 
     end 
 end)
@@ -120,6 +132,9 @@ for i,plr in pairs(game.Players:GetChildren()) do
 local v = plr
 if plr:GetAttribute("NSXFA") then 
        sendmsg('[' .. 
+            plr:GetAttribute("NSXFA") ..
+            "] (" .. plr.PlayerData.DisplayName.Value  .. ")[" .. plr.PlayerData.Number.Value  ..  "] 's role is now exposed to you and is available in chat! \n")
+        print('[' .. 
             plr:GetAttribute("NSXFA") ..
             "] (" .. plr.PlayerData.DisplayName.Value  .. ")[" .. plr.PlayerData.Number.Value  ..  "] 's role is now exposed to you and is available in chat! \n")
 end 
