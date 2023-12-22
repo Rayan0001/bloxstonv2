@@ -35,6 +35,7 @@ local gunsandroles = {
     ["Bat"] = "Outlaw w/o gun",
     ["TommyGun"] = "Outlaw",
     ["Tommy Gun"] = "Outlaw",
+    ["CrusaderSword"] = "Crusader",
 }
 
 function bypac()
@@ -55,13 +56,14 @@ end)
 end
 sendmsg("Bloxston Mystery ESP")
 sendmsg("Initializing..")
-print("Parsing V2.7..")
+print("Parsing V2.8..")
 wait(0.5)
-print("Loaded BME V2.7 in 1036ms")
+print("Loaded BME V2.8 in 1036ms")
 print("[BME] tip: dont commit die")
 print("[BME] Changelog for V2.5: Added Juggernaut, Fugitive, Outlaw w/ gun and w/o gun.")
 print("[BME] Changelog for V2.6: Added changelog and changed a bit of messages and added print functions.")
 print("[BME] Changelog for V2.7: Reversed IY function breaking the script.")
+print("[BME] Changelog for V2.8: Added Crusader.")
 sendmsg("[BME] Bypassing anticheat..")
 sendmsg("If the anticheat bypassed message doesnt appear, you are probably in the lobby, if so: execute this ingame.")
 print("If the anticheat bypassed message doesnt appear, you are probably in the lobby, if so: execute this ingame.")
