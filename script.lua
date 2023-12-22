@@ -4,8 +4,6 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
 Text = msg;
 })
 end 
-
-
 local rolesandcolors = {
     ["Mafia"] = Color3.fromRGB(255,0,0), 
     ["Vampire"] = Color3.fromRGB(64,64,64),
@@ -37,7 +35,6 @@ local gunsandroles = {
     ["Bat"] = "Outlaw w/o gun",
     ["TommyGun"] = "Outlaw",
     ["Tommy Gun"] = "Outlaw",
-    ["Scimitar"] = "Pirate",
 }
 
 function bypac()
@@ -58,15 +55,16 @@ end)
 end
 sendmsg("Bloxston Mystery ESP")
 sendmsg("Initializing..")
+print("Parsing V2.7..")
 wait(0.5)
-print("Loaded BME V2.7 in 2102ms")
+print("Loaded BME V2.7 in 1036ms")
 print("[BME] tip: dont commit die")
 print("[BME] Changelog for V2.5: Added Juggernaut, Fugitive, Outlaw w/ gun and w/o gun.")
 print("[BME] Changelog for V2.6: Added changelog and changed a bit of messages and added print functions.")
-print("[BME] Changelog for V2.7: Added pirate tool and just new version overall.")
+print("[BME] Changelog for V2.7: Reversed IY function breaking the script.")
 sendmsg("[BME] Bypassing anticheat..")
-sendmsg("[BME] If the anticheat bypassed message doesnt appear, you are probably in the lobby, if so: execute this ingame.")
-print("[BME] If the anticheat bypassed message doesnt appear, you are probably in the lobby, if so: execute this ingame.")
+sendmsg("If the anticheat bypassed message doesnt appear, you are probably in the lobby, if so: execute this ingame.")
+print("If the anticheat bypassed message doesnt appear, you are probably in the lobby, if so: execute this ingame.")
 wait(1)
 bypac()
 wait()
@@ -75,9 +73,6 @@ print("[BME] Anticheat has been bypassed!")
 wait()
 print("[BME] Role snooper has been enabled.")
 sendmsg("[BME] Role snooper has been enabled.")
-if _G.IY = true do -- infinite yield thang
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end
 wait(1)
 sendmsg("[BME] Tip: Roles will most likely appear in the night, have this executed before the begin of the night. if ya want some more info from BME check console.")
 print("[BME] Tip: Roles will most likely appear in the night, have this executed before the begin of the night. if ya want some more info from BME check console.")
