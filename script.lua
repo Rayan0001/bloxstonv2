@@ -5,7 +5,7 @@ Text = msg;
 })
 end 
 
-_G.IY = true
+
 local rolesandcolors = {
     ["Mafia"] = Color3.fromRGB(255,0,0), 
     ["Vampire"] = Color3.fromRGB(64,64,64),
